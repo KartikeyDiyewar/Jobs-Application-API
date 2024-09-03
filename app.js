@@ -11,6 +11,15 @@ const express = require("express");
 const app = express();
 
 const connectDB = require("./db/connect");
+
+app.get("/", (req, res) => {
+  res
+    .status(200)
+    .send(
+      "<h1>Wecome to Jobs-API please check the documentation<a href='docs'>Docs</a></h1>"
+    );
+});
+
 const authenticateUser = require("./middleware/authentication");
 
 const authRouter = require("./routes/auth");
