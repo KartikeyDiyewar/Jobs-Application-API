@@ -16,7 +16,7 @@ app.get("/", (req, res) => {
   res
     .status(200)
     .send(
-      "<h1>Wecome to Jobs-API please check the documentation<a href='https://documenter.getpostman.com/view/32448060/2sAXjNXqvq'>Docs</a></h1>"
+      "<h1>Wecome to Jobs-API <a href='https://documenter.getpostman.com/view/32448060/2sAXjNXqvq'>please check the documentation</a></h1>"
     );
 });
 
